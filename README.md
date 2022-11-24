@@ -1,8 +1,10 @@
+> ⚠️ This "fork" is an attempt to patch Celo types to the original [w3](https://github.com/lmittmann/w3) library. Celo introduces breaking Transactions and Block types. Some tests are supressed.
+
 # w3
 
+[![Go](https://github.com/grassrootseconomics/w3-celo-patch/actions/workflows/go.yml/badge.svg)](https://github.com/grassrootseconomics/w3-celo-patch/actions/workflows/go.yml)
 [![Go Reference](https://pkg.go.dev/badge/github.com/grassrootseconomics/w3-celo-patch.svg)](https://pkg.go.dev/github.com/grassrootseconomics/w3-celo-patch)
 [![Go Report Card](https://goreportcard.com/badge/github.com/grassrootseconomics/w3-celo-patch)](https://goreportcard.com/report/github.com/grassrootseconomics/w3-celo-patch)
-[![Coverage Status](https://coveralls.io/repos/github/lmittmann/w3/badge.svg?branch=main)](https://coveralls.io/github/lmittmann/w3?branch=main)
 [![Latest Release](https://img.shields.io/github/v/release/lmittmann/w3)](https://github.com/grassrootseconomics/w3-celo-patch/releases)
 
 <img src="https://user-images.githubusercontent.com/3458786/153202258-24bf253e-5ab0-4efd-a0ed-43dc1bf093c9.png" align="right" alt="W3 Gopher" width="158" height="224">
