@@ -4,8 +4,8 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/lmittmann/w3/module/web3"
-	"github.com/lmittmann/w3/rpctest"
+	"github.com/grassrootseconomics/w3-celo-patch/module/web3"
+	"github.com/grassrootseconomics/w3-celo-patch/rpctest"
 )
 
 func TestClientVersion(t *testing.T) {

@@ -4,9 +4,9 @@ import (
 	"testing"
 
 	"github.com/celo-org/celo-blockchain/common"
-	"github.com/lmittmann/w3"
-	"github.com/lmittmann/w3/module/eth"
-	"github.com/lmittmann/w3/rpctest"
+	"github.com/grassrootseconomics/w3-celo-patch"
+	"github.com/grassrootseconomics/w3-celo-patch/module/eth"
+	"github.com/grassrootseconomics/w3-celo-patch/rpctest"
 )
 
 func TestStorageAt(t *testing.T) {

@@ -10,7 +10,7 @@ import (
 	"github.com/celo-org/celo-blockchain/common"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"github.com/lmittmann/w3/internal"
+	"github.com/grassrootseconomics/w3-celo-patch/internal"
 )
 
 func TestParse(t *testing.T) {

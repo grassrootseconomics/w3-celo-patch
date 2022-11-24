@@ -7,7 +7,7 @@ import (
 
 	"github.com/celo-org/celo-blockchain/accounts/abi"
 	"github.com/celo-org/celo-blockchain/crypto"
-	_abi "github.com/lmittmann/w3/internal/abi"
+	_abi "github.com/grassrootseconomics/w3-celo-patch/internal/abi"
 )
 
 var (

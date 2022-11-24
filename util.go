@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/celo-org/celo-blockchain/common"
-	"github.com/lmittmann/w3/internal/crypto"
+	"github.com/grassrootseconomics/w3-celo-patch/internal/crypto"
 )
 
 // Common [big.Int]'s.

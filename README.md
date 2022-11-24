@@ -1,9 +1,9 @@
 # w3
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/lmittmann/w3.svg)](https://pkg.go.dev/github.com/lmittmann/w3)
-[![Go Report Card](https://goreportcard.com/badge/github.com/lmittmann/w3)](https://goreportcard.com/report/github.com/lmittmann/w3)
+[![Go Reference](https://pkg.go.dev/badge/github.com/grassrootseconomics/w3-celo-patch.svg)](https://pkg.go.dev/github.com/grassrootseconomics/w3-celo-patch)
+[![Go Report Card](https://goreportcard.com/badge/github.com/grassrootseconomics/w3-celo-patch)](https://goreportcard.com/report/github.com/grassrootseconomics/w3-celo-patch)
 [![Coverage Status](https://coveralls.io/repos/github/lmittmann/w3/badge.svg?branch=main)](https://coveralls.io/github/lmittmann/w3?branch=main)
-[![Latest Release](https://img.shields.io/github/v/release/lmittmann/w3)](https://github.com/lmittmann/w3/releases)
+[![Latest Release](https://img.shields.io/github/v/release/lmittmann/w3)](https://github.com/grassrootseconomics/w3-celo-patch/releases)
 
 <img src="https://user-images.githubusercontent.com/3458786/153202258-24bf253e-5ab0-4efd-a0ed-43dc1bf093c9.png" align="right" alt="W3 Gopher" width="158" height="224">
 
@@ -38,7 +38,7 @@ Call_Block100       6.89s ± 7%         1.94s ±11%  -71.77%  (p=0.000 n=24+23)
 ## Install
 
 ```
-go get github.com/lmittmann/w3
+go get github.com/grassrootseconomics/w3-celo-patch
 ```
 
 
@@ -47,8 +47,8 @@ go get github.com/lmittmann/w3
 > **Note**
 > Check out the [examples](examples/)!
 
-Connect to an RPC endpoint via HTTP, WebSocket, or IPC using [`Dial`](https://pkg.go.dev/github.com/lmittmann/w3#Dial)
-or [`MustDial`](https://pkg.go.dev/github.com/lmittmann/w3#MustDial).
+Connect to an RPC endpoint via HTTP, WebSocket, or IPC using [`Dial`](https://pkg.go.dev/github.com/grassrootseconomics/w3-celo-patch#Dial)
+or [`MustDial`](https://pkg.go.dev/github.com/grassrootseconomics/w3-celo-patch#MustDial).
 
 ```go
 // Connect (or panic on error)
@@ -59,7 +59,7 @@ defer client.Close()
 
 ## Batch Requests
 
-Batch request support in the [`Client`](https://pkg.go.dev/github.com/lmittmann/w3#Client)
+Batch request support in the [`Client`](https://pkg.go.dev/github.com/grassrootseconomics/w3-celo-patch#Client)
 allows to send multiple RPC requests in a single HTTP request. The speed gains
 to remote endpoints are huge. Fetching 100 blocks in a single batch request
 with `w3` is ~80x faster compared to sequential requests with `ethclient`.
@@ -91,16 +91,16 @@ Example: ABI binding for the ERC20-function `balanceOf`
 funcBalanceOf := w3.MustNewFunc("balanceOf(address)", "uint256")
 ```
 
-A [`Func`](https://pkg.go.dev/github.com/lmittmann/w3#Func) can be used to
+A [`Func`](https://pkg.go.dev/github.com/grassrootseconomics/w3-celo-patch#Func) can be used to
 
-* encode arguments to the contracts input data ([`Func.EncodeArgs`](https://pkg.go.dev/github.com/lmittmann/w3#Func.EncodeArgs)),
-* decode arguments from the contracts input data ([`Func.DecodeArgs`](https://pkg.go.dev/github.com/lmittmann/w3#Func.DecodeArgs)), and
-* decode returns form the contracts output data ([`Func.DecodeReturns`](https://pkg.go.dev/github.com/lmittmann/w3#Func.DecodeReturns)).
+* encode arguments to the contracts input data ([`Func.EncodeArgs`](https://pkg.go.dev/github.com/grassrootseconomics/w3-celo-patch#Func.EncodeArgs)),
+* decode arguments from the contracts input data ([`Func.DecodeArgs`](https://pkg.go.dev/github.com/grassrootseconomics/w3-celo-patch#Func.DecodeArgs)), and
+* decode returns form the contracts output data ([`Func.DecodeReturns`](https://pkg.go.dev/github.com/grassrootseconomics/w3-celo-patch#Func.DecodeReturns)).
 
 ### Reading Contracts
 
-[`Func`](https://pkg.go.dev/github.com/lmittmann/w3#Func)'s can be used with
-[`eth.CallFunc`](https://pkg.go.dev/github.com/lmittmann/w3/module/eth#CallFunc)
+[`Func`](https://pkg.go.dev/github.com/grassrootseconomics/w3-celo-patch#Func)'s can be used with
+[`eth.CallFunc`](https://pkg.go.dev/github.com/grassrootseconomics/w3-celo-patch/module/eth#CallFunc)
 in the client to read contract data.
 
 ```go
@@ -122,7 +122,7 @@ err := client.Call(
 
 Sending a transaction to a contract requires three steps.
 
-1. Encode the transaction input data using [`Func.EncodeArgs`](https://pkg.go.dev/github.com/lmittmann/w3#Func.EncodeArgs).
+1. Encode the transaction input data using [`Func.EncodeArgs`](https://pkg.go.dev/github.com/grassrootseconomics/w3-celo-patch#Func.EncodeArgs).
 
 ```go
 var funcTransfer = w3.MustNewFunc("transfer(address,uint256)", "bool")
@@ -157,7 +157,7 @@ err := client.Call(
 ## Custom RPC Methods
 
 Custom RPC methods can be called with the `w3` client by creating a
-[`core.Caller`](https://pkg.go.dev/github.com/lmittmann/w3/core#Caller)
+[`core.Caller`](https://pkg.go.dev/github.com/grassrootseconomics/w3-celo-patch/core#Caller)
 implementation.
 The `w3/module/eth` package can be used as implementation reference.
 
@@ -185,7 +185,7 @@ to parse strings that may not be valid instead.
 
 List of supported RPC methods.
 
-### [`eth`](https://pkg.go.dev/github.com/lmittmann/w3/module/eth)
+### [`eth`](https://pkg.go.dev/github.com/grassrootseconomics/w3-celo-patch/module/eth)
 
 | Method                                    | Go Code
 | :---------------------------------------- | :-------
@@ -214,14 +214,14 @@ List of supported RPC methods.
 | `eth_getUncleCountByBlockHash`            | `eth.UncleCountByBlockHash(hash common.Hash).Returns(count *uint)`
 | `eth_getUncleCountByBlockNumber`          | `eth.UncleCountByBlockNumber(number *big.Int).Returns(count *uint)`
 
-### [`debug`](https://pkg.go.dev/github.com/lmittmann/w3/module/debug)
+### [`debug`](https://pkg.go.dev/github.com/grassrootseconomics/w3-celo-patch/module/debug)
 
 | Method                   | Go Code
 | :----------------------- | :-------
 | `debug_traceCall`        | `debug.TraceCall(msg *w3types.Message, blockNumber *big.Int, config *debug.TraceConfig).Returns(trace *debug.Trace)`<br>`debug.CallTraceCall(msg *w3types.Message, blockNumber *big.Int, overrides w3types.State).Returns(trace *debug.CallTrace)`
 | `debug_traceTransaction` | `debug.TraceTx(txHash common.Hash, config *debug.TraceConfig).Returns(trace *debug.Trace)`<br>`debug.CallTraceTx(txHash common.Hash, overrides w3types.State).Returns(trace *debug.CallTrace)`
 
-### [`web3`](https://pkg.go.dev/github.com/lmittmann/w3/module/web3)
+### [`web3`](https://pkg.go.dev/github.com/grassrootseconomics/w3-celo-patch/module/web3)
 
 | Method               | Go Code
 | :------------------- | :-------

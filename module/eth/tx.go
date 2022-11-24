@@ -6,8 +6,8 @@ import (
 	"github.com/celo-org/celo-blockchain/common"
 	"github.com/celo-org/celo-blockchain/common/hexutil"
 	"github.com/celo-org/celo-blockchain/core/types"
-	"github.com/lmittmann/w3/internal/module"
-	"github.com/lmittmann/w3/w3types"
+	"github.com/grassrootseconomics/w3-celo-patch/internal/module"
+	"github.com/grassrootseconomics/w3-celo-patch/w3types"
 )
 
 // Tx requests the transaction with the given hash.

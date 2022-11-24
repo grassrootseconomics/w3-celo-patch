@@ -4,8 +4,8 @@ import (
 	"math/big"
 
 	"github.com/celo-org/celo-blockchain/common"
-	"github.com/lmittmann/w3/internal/module"
-	"github.com/lmittmann/w3/w3types"
+	"github.com/grassrootseconomics/w3-celo-patch/internal/module"
+	"github.com/grassrootseconomics/w3-celo-patch/w3types"
 )
 
 // StorageAt requests the storage of the given common.Address addr at the

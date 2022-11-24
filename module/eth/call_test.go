@@ -6,10 +6,10 @@ import (
 
 	"github.com/celo-org/celo-blockchain/common"
 	"github.com/celo-org/celo-blockchain/core/types"
-	"github.com/lmittmann/w3"
-	"github.com/lmittmann/w3/module/eth"
-	"github.com/lmittmann/w3/rpctest"
-	"github.com/lmittmann/w3/w3types"
+	"github.com/grassrootseconomics/w3-celo-patch"
+	"github.com/grassrootseconomics/w3-celo-patch/module/eth"
+	"github.com/grassrootseconomics/w3-celo-patch/rpctest"
+	"github.com/grassrootseconomics/w3-celo-patch/w3types"
 )
 
 var (

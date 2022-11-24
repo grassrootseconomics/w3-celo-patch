@@ -15,11 +15,11 @@ import (
 	"github.com/celo-org/celo-blockchain/ethclient"
 	"github.com/celo-org/celo-blockchain/rpc"
 	"github.com/google/go-cmp/cmp"
-	"github.com/lmittmann/w3"
-	"github.com/lmittmann/w3/internal"
-	"github.com/lmittmann/w3/module/eth"
-	"github.com/lmittmann/w3/rpctest"
-	"github.com/lmittmann/w3/w3types"
+	"github.com/grassrootseconomics/w3-celo-patch"
+	"github.com/grassrootseconomics/w3-celo-patch/internal"
+	"github.com/grassrootseconomics/w3-celo-patch/module/eth"
+	"github.com/grassrootseconomics/w3-celo-patch/rpctest"
+	"github.com/grassrootseconomics/w3-celo-patch/w3types"
 )
 
 var (

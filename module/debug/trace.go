@@ -8,9 +8,9 @@ import (
 
 	"github.com/celo-org/celo-blockchain/common"
 	"github.com/celo-org/celo-blockchain/core/vm"
+	"github.com/grassrootseconomics/w3-celo-patch/internal/module"
+	"github.com/grassrootseconomics/w3-celo-patch/w3types"
 	"github.com/holiman/uint256"
-	"github.com/lmittmann/w3/internal/module"
-	"github.com/lmittmann/w3/w3types"
 )
 
 // TraceCall requests the trace of the given message.

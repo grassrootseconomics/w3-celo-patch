@@ -10,9 +10,9 @@ import (
 	"github.com/celo-org/celo-blockchain/core/types"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"github.com/lmittmann/w3"
-	"github.com/lmittmann/w3/module/eth"
-	"github.com/lmittmann/w3/rpctest"
+	"github.com/grassrootseconomics/w3-celo-patch"
+	"github.com/grassrootseconomics/w3-celo-patch/module/eth"
+	"github.com/grassrootseconomics/w3-celo-patch/rpctest"
 )
 
 // func TestBlockByHash(t *testing.T) {

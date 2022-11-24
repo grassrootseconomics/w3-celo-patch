@@ -1,6 +1,6 @@
-module github.com/lmittmann/w3
+module github.com/grassrootseconomics/w3-celo-patch
 
-go 1.18
+go 1.19
 
 require (
 	github.com/celo-org/celo-blockchain v1.6.1

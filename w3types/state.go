@@ -7,7 +7,7 @@ import (
 	"github.com/celo-org/celo-blockchain/common"
 	"github.com/celo-org/celo-blockchain/common/hexutil"
 	"github.com/celo-org/celo-blockchain/core"
-	"github.com/lmittmann/w3/internal/crypto"
+	"github.com/grassrootseconomics/w3-celo-patch/internal/crypto"
 )
 
 var emptyCodeHash = crypto.Keccak256Hash(nil)

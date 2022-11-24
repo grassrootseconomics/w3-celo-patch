@@ -4,10 +4,10 @@ go 1.19
 
 require (
 	github.com/celo-org/celo-blockchain v1.10.25
-	github.com/lmittmann/w3 v0.10.0
+	github.com/grassrootseconomics/w3-celo-patch v0.10.0
 )
 
-replace github.com/lmittmann/w3 => ../
+replace github.com/grassrootseconomics/w3-celo-patch => ../
 
 require (
 	github.com/StackExchange/wmi v0.0.0-20180116203802-5d049714c4a6 // indirect

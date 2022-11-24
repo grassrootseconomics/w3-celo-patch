@@ -7,7 +7,7 @@ import (
 
 	"github.com/celo-org/celo-blockchain/common/hexutil"
 	"github.com/celo-org/celo-blockchain/rpc"
-	"github.com/lmittmann/w3/w3types"
+	"github.com/grassrootseconomics/w3-celo-patch/w3types"
 )
 
 var (

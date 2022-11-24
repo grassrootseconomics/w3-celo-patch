@@ -6,8 +6,8 @@ import (
 	ethereum "github.com/celo-org/celo-blockchain"
 	"github.com/celo-org/celo-blockchain/core/types"
 	"github.com/celo-org/celo-blockchain/rpc"
-	"github.com/lmittmann/w3/internal/module"
-	"github.com/lmittmann/w3/w3types"
+	"github.com/grassrootseconomics/w3-celo-patch/internal/module"
+	"github.com/grassrootseconomics/w3-celo-patch/w3types"
 )
 
 // Logs requests the logs of the given ethereum.FilterQuery q.
