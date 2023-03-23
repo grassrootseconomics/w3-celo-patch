@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/celo-org/celo-blockchain v1.7.2
 	github.com/google/go-cmp v0.5.9
-	github.com/holiman/uint256 v1.2.1
+	github.com/holiman/uint256 v1.2.2
 )
 
 require (
